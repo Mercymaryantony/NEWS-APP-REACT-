@@ -25,11 +25,11 @@ const View = () => {
                                     {
                                         return  <div className="col col-12 col-sm-6 col-md-4 col-lg-3 col-xl-3 col-xxl-3">
                                         <div className="card" >
-                                            <img src={value.urlToImage} alt='...' height="250px"></img>
+                                            <img src={value.url} alt='...' height="250px"></img>
                                                 <div className="card-body">
-                                                    <p className="card-text">{value.author}</p>
+                                                    <p className="card-text">{value.aut}</p>
                                                     <p className="card-text">{value.title}</p>
-                                                    <a href="url" class="btn btn-primary">READ MORE</a>
+                                                    <a href="url" class="btn btn-primary">{value.desc}</a>
                                                 </div>
                                         </div>
                                     </div>
