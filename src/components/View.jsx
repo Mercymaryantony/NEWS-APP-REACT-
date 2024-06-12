@@ -2,11 +2,10 @@ import axios from 'axios'
 import React, { useEffect, useState } from 'react'
 
 const View = () => {
-   const [data,changedata]=useState(
-    {"articles":[]}
+   const [data,changedata]=useState([]
 )
    const fetchdata = () =>{
-    axios.get("https://newsapi.org/v2/top-headlines?country=in&category=general&apiKey=9b6ac262eea44bcbbf80ae1b064f631d").then(
+    axios.get("http://localhost:8000/view").then(
         (response)=>{
             changedata(response.data)
         }
