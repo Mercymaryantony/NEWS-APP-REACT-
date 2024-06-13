@@ -20,6 +20,7 @@ const View = () => {
         <div className="container">
             <div className="row">
                 <div className="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+                    <br></br>
                     <div className="row g-3">
                                {data.map(
                                 (value,i)=>
@@ -30,7 +31,7 @@ const View = () => {
                                                 <div className="card-body">
                                                     <p className="card-text">{value.aut}</p>
                                                     <p className="card-text">{value.title}</p>
-                                                    <a href="url" class="btn btn-primary">{value.desc}</a>
+                                                    <p>{value.desc}</p>
                                                 </div>
                                         </div>
                                     </div>
